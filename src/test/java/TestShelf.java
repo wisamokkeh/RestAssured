@@ -11,8 +11,8 @@ public class TestShelf {
 	}
 	@Test
 	public void testCaseOne() {
-		shelf.addBook("The secret");
-		Assert.assertTrue(shelf.getBooks().contains("The secret"));
+		shelf.addBook("The secret 2");
+		Assert.assertTrue(shelf.getBooks().contains("The secret 2"));
 	}
 	
 	@Test
