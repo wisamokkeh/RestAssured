@@ -31,11 +31,11 @@ public class UseParametersJunit {
 		TestGet testGet = new TestGet();
 
 		testGet.runGet(url);
-		Assert.assertEquals(testGet.status_code , Integer.parseInt(statusCode));
+		Assert.assertEquals(Integer.parseInt(statusCode), testGet.status_code);
 	}
 	
 	@BeforeParam
-	public void beforeParam() {
+	public static void beforeParam() {
 		System.out.println("before param");
 	}
 }

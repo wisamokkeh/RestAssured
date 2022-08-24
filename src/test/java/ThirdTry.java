@@ -18,7 +18,7 @@ public class ThirdTry {
 	}
 	
 	@Test
-	public  void testGet() throws Exception {
+	public void testGet() throws Exception {
 		for (String[] line : lines) {
 			if(line[0].contains("route")) {
 				continue;
@@ -33,7 +33,7 @@ public class ThirdTry {
 			}
 			
 		}
-		Assert.assertEquals("Test have "+failedLines.size()+" failed cases", failedLines.size() , 0);
+		Assert.assertEquals("Test have "+failedLines.size()+" failed cases", 0,failedLines.size());
 	}
 	
 	@AfterClass

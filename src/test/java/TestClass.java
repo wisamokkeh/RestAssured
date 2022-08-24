@@ -25,7 +25,7 @@ public class TestClass extends TestInheritance {
 		System.out.println("after");
 		
 	}
-
+	@Ignore
 	@Test
 	public void testValidateValues() {
 		Assert.assertEquals(10, 10);
@@ -33,7 +33,8 @@ public class TestClass extends TestInheritance {
 	
 	@Test
 	public void testMultiAsserts() {
-		Assert.assertEquals(10, 10);
+		Assert.assertEquals(10,10);
+		System.out.println("after fail");
 		Assert.assertEquals(20, 20);
 		Assert.assertEquals("test", "test");
 	}
@@ -42,7 +43,7 @@ public class TestClass extends TestInheritance {
 	public void testFalse() {
 		Assert.assertFalse("10".equals("10"));
 	}
-	
+	@Ignore
 	@Test
 	public void testCompareArrays() {
 		String[] array1 = {"1","2","3"};

@@ -7,6 +7,7 @@ import org.junit.Test;
 public class SecondTry {
 	static List<String[]> lines;
 	static String url = "https://jsonplaceholder.typicode.com";
+	
 	@BeforeClass
 	public static void beforeClass() throws Exception {
 		String path = "./testData.csv";
@@ -15,7 +16,7 @@ public class SecondTry {
 	}
 	
 	@Test
-	public static void testGet() throws Exception {
+	public  void testGet() throws Exception {
 		for (String[] line : lines) {
 			if(line[0].contains("route")) {
 				continue;

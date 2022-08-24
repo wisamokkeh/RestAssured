@@ -1,4 +1,5 @@
 "route","expected status code","actual status Code"
+"/posts/1","400","200"
 "/comments?postId=test","404","200"
 "/comments?postId=10000","404","200"
 "/posts/3333/comments","404","200"
